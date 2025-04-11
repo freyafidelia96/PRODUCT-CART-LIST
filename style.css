@@ -1,6 +1,7 @@
 .wrapper {
     background-color: #fdf5f1;
     overflow: hidden;
+
 }
 
 
@@ -14,54 +15,183 @@
 
 .columns section {
     margin-block: 30px;
-    border: 10px solid blue;
     padding: 0;
 
 }
 
 
-
 #desserts {
-    border: 10px solid red;
+    font-family: 'RedHatText';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
 }
 
 .desserts-column {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 10px solid green;
 
 }
 
-.desserts-column img:hover {
-    color: red;
-    border: solid red 2px;
+.desserts-column div>img:hover {
+    border: solid #d10707 2px;
 }
 
-.desserts-column img {
-    display: block;
+.desserts-column div>img {
+    display: inline;
     max-inline-size: 250px;
     margin-inline-end: 20px;
+    border-radius: 10px;
+}
 
+.desserts-column button {
+    margin-inline: 50px;
+    margin-block: -12px;
+    border: 0.2px solid #818080;
+    border-radius: 30px;
+    padding-block: 6px;
+    padding-inline: 30px;
+    background-color: white;
+    inline-size: auto;
+    display: block;
+    position: relative;
+}
+
+.desserts-column button p {
+    display: inline;
+    padding-block-end: 30px;
+}
+
+.desserts-column div .price {
+    color: #d10707;
+    margin-block-start: -7px;
+    font-family: 'RedHatText';
+}
+
+.desserts-column div p:nth-child(3) {
+    margin-block-end: -7px;
+    font-family: 'RedHatText';
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+.desserts-column div p:nth-child(4) {
+    font-family: 'RedHatText';
+    font-weight: 600;
+    font-style: normal;
 }
 
 .rows {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 0px;
 }
 
-.inline-group p {
-    display: inline;
-    padding-inline-end: 40px;
+
+.inline-group strong {
+    padding-inline-end: 8px;
+}
+
+.inline-group img {
+    border: 1px solid black;
+    border-radius: 50%;
+    inline-size: 12px;
 }
 
 .order-total p {
     display: inline;
-    padding-inline-end: 40px;
+    padding-inline-end: 170px;
+    font-style: normal;
+    font-weight: 100;
 }
 
 
 .cart-column {
-    border: 10px solid yellow;
+    border: 10px solid white;
     padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'RedHatText';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.inline-group p {
+    display: inline;
+    padding-inline-end: 150px;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.inline-group p span:last-child {
+    margin-inline-start: 6px;
+    font-weight: 400;
+}
+
+.carbon-neutral {
+    background-color: #f3eeee;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 200;
+}
+
+
+.cart-column h4 {
+    font-size: large;
+    margin-block-end: auto;
+}
+
+.cart-column h4,
+.inline-group strong {
+    color: #d10707;
+}
+
+#confirm-order {
+    inline-size: 320px;
+    padding: 10px 25px;
+    background-color: #d10707;
+    border-style: none;
+    border-radius: 20px;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'RedHatText';
+    src: url('./fonts/static/RedHatText-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'RedHatText';
+    src: url('./fonts/static/RedHatText-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'RedHatText';
+    src: url('./fonts/static/RedHatText-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: 'RedHatText';
+    src: url('./fonts/RedHatText-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    /* range supported */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RedHatText';
+    src: url('./fonts/RedHatText-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
 }
