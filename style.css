@@ -1,0 +1,67 @@
+.wrapper {
+    background-color: #fdf5f1;
+    overflow: hidden;
+}
+
+
+.columns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.columns section {
+    margin-block: 30px;
+    border: 10px solid blue;
+    padding: 0;
+
+}
+
+
+
+#desserts {
+    border: 10px solid red;
+}
+
+.desserts-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 10px solid green;
+
+}
+
+.desserts-column img:hover {
+    color: red;
+    border: solid red 2px;
+}
+
+.desserts-column img {
+    display: block;
+    max-inline-size: 250px;
+    margin-inline-end: 20px;
+
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.inline-group p {
+    display: inline;
+    padding-inline-end: 40px;
+}
+
+.order-total p {
+    display: inline;
+    padding-inline-end: 40px;
+}
+
+
+.cart-column {
+    border: 10px solid yellow;
+    padding: 10px;
+}
