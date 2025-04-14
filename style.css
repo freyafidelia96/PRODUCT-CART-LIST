@@ -50,7 +50,7 @@
 
 .desserts-column button {
     margin-inline: 50px;
-    top: -12px;
+    top: -20px;
     border: 0.2px solid #818080;
     border-radius: 30px;
     padding-block: 8px;
@@ -66,6 +66,7 @@
     padding-block-end: 30px;
     position: relative;
     top: -5px;
+    color: black;
 }
 
 .desserts-column div .price {
