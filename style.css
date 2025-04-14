@@ -67,6 +67,8 @@
     position: relative;
     top: -5px;
     color: black;
+    font-family: 'RedHatText';
+    font-weight: 600;
 }
 
 .desserts-column div .price {
