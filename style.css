@@ -61,13 +61,13 @@
     position: relative;
 }
 
-.desserts-column button p {
-    display: inline;
+.desserts-column button span {
     padding-block-end: 30px;
     position: relative;
     top: -5px;
     color: black;
     font-family: 'RedHatText';
+    font-style: normal;
     font-weight: 600;
 }
 
